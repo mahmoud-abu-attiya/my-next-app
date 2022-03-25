@@ -1,6 +1,9 @@
-import styles from "../styles/Navbar.module.css"
-export default function Footer() {
+const Footer = () => {
   return (
-    <div className={styles.bg}>Footer</div>
-  )
+    <footer>
+      Copyright 2022 Mahmoud
+    </footer>
+  );
 }
+
+export default Footer;
