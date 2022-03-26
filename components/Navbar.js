@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 const Navbar = () => {
   return (
@@ -13,7 +14,7 @@ const Navbar = () => {
     "
     >
       <div className="mr-auto">
-        <img className=" w-[40%]" src="/images/logo.png" alt="logo" />
+        <Image width={70} height={45} src="/images/logo.png" alt="logo" />
       </div>
       <Link href="/">
         <a className="nav-link">Home</a>

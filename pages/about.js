@@ -10,7 +10,7 @@ const About = () => {
     <div className="min-h-[60vh]">
       <h1>About</h1>
       {Array(8).fill(" ").map((el) => (
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, beatae iusto? Fugiat beatae doloremque quae vitae! Asperiores laborum sint a!</p>
+      <p key={el}>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, beatae iusto? Fugiat beatae doloremque quae vitae! Asperiores laborum sint a!</p>
       ))}
     </div>
     </>
