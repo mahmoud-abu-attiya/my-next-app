@@ -26,7 +26,7 @@ export const getStaticProps = async (context) => {
 
 const Details = ({ user }) => {
   return (
-    <div>
+    <div className="min-h-[60vh]">
       <h1>{ user.name }</h1>
       <p>{ user.email }</p>
       <p>{ user.website }</p>

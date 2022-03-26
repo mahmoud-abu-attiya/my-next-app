@@ -3,11 +3,8 @@ import Link from "next/dist/client/link";
 import { useEffect } from 'react';
 import { useRouter } from 'next/router';
 
-
-
 const Error = () => {
   const router = useRouter()
-
   useEffect(()=>{
     setTimeout(() => {
       // router.go(-1)
@@ -16,13 +13,13 @@ const Error = () => {
   })
 
   return (
-    <div className="not-found">
+    <div className="text-center">
       <h1>Oooops...</h1>
       <h2>that page cannot be found.</h2>
       <p>
         Go back to the{" "}
         <Link href="/">
-          <a>Homepage</a>
+          <a className=" underline text-blue-600">Homepage</a>
         </Link>{" "}
       </p>
     </div>

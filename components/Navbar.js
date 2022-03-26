@@ -1,17 +1,31 @@
 import Link from "next/link";
-import Image from "next/image";
 
 const Navbar = () => {
-  return ( 
-    <nav>
-      <div className="logo">
-        <Image src="/images/logo.png" alt="logo" width={200} height={125} />
+  return (
+    <nav
+      className="
+    flex
+    justify-between
+    items-center
+    mb-10
+    border-b-2
+    py-3
+    "
+    >
+      <div className="mr-auto">
+        <img className=" w-[40%]" src="/images/logo.png" alt="logo" />
       </div>
-      <Link  href="/">Home</Link>
-      <Link  href="/about">About</Link>
-      <Link  href="/users">Users listing</Link>
+      <Link href="/">
+        <a className="nav-link">Home</a>
+      </Link>
+      <Link href="/about">
+        <a className="nav-link">About</a>
+      </Link>
+      <Link href="/users">
+        <a className="nav-link">Users listing</a>
+      </Link>
     </nav>
   );
-}
+};
 
 export default Navbar;

@@ -1,4 +1,3 @@
-import styles from "../../styles/Users.module.css";
 import Link from "next/link";
 
 export const getStaticProps = async () => {
@@ -13,12 +12,12 @@ const Users = ({ users }) => {
   console.log(users);
 
   return (
-    <div>
-      <h1>All Ninjas</h1>
+    <div className="min-h-[60vh]">
+      <h1>All Users</h1>
       {users.map((user) => (
         <Link href={"/users/" + user.id} key={user.id}>
-          <a className={styles.single}>
-            <h3>{user.name}</h3>
+          <a>
+            <h3 className=" py-3 border-l-2 border-l-blue-600 bg-white py-1 px-4 my-4 hover:border-l-8 hover:border-l-blue-700 hover:shadow transition-all">{user.name}</h3>
           </a>
         </Link>
       ))}
